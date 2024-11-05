@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RITES Alternative Interface</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">RITES</div>
+      <nav class="active">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Transforming Infrastructure for a Sustainable Future</h1>
+        <p>Your trusted partner in engineering and consultancy</p>
+        <button onclick="scrollToSection('services')">
+          Explore Our Services
+        </button>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <img
+          src="down-arrow.png"
+          alt="Scroll"
+          style="width: 20px; height: 20px"
+        />
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Railway Infrastructure</h3>
+          <p>Engineering and consultancy for rail networks.</p>
+        </div>
+        <div class="card">
+          <h3>Highways</h3>
+          <p>Consultancy services for highway development.</p>
+        </div>
+        <div class="card">
+          <h3>Ports & Waterways</h3>
+          <p>Solutions for maritime and inland waterway projects.</p>
+        </div>
+        <div class="card">
+          <h3>Urban Development</h3>
+          <p>Innovative approaches to urban planning.</p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Our Projects</h2>
+      <div class="projects-gallery">
+        <div class="project">
+          <a href="#project1">
+            <img src="AA1qvyiO.jpg" alt="Project 1" />
+            <div class="project-description">
+              <h3>Railway Modernization</h3>
+              <p>
+                Enhancing railway systems for increased safety and efficiency.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="#project2">
+            <img src="Nick_Fewings_Unsplash.jpg" alt="Project 2" />
+            <div class="project-description">
+              <h3>Highway Development</h3>
+              <p>
+                State-of-the-art highways to improve transportation
+                infrastructure.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="project">
+          <a href="#project3">
+            <img
+              src="Indutsry-New-Nurturing-Futuristic-Urban-Development.jpg"
+              alt="Project 3"
+            />
+            <div class="project-description">
+              <h3>Urban Development</h3>
+              <p>Creating sustainable cities for a better tomorrow.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Lightbox Modals -->
+      <div id="project1" class="lightbox">
+        <a href="#" class="close-lightbox">&times;</a>
+        <img
+          src="https://www.financialexpress.com/wp-content/uploads/2024/09/vande-metro-pib.jpg"
+          alt="Project 1"
+        />
+      </div>
+      <div id="project2" class="lightbox">
+        <a href="#" class="close-lightbox">&times;</a>
+        <img
+          src="https://www.ltmetro.in/media/30061/rolling-stock.jpg"
+          alt="Project 2"
+        />
+      </div>
+      <div id="project3" class="lightbox">
+        <a href="#" class="close-lightbox">&times;</a>
+        <img src="images/project3.jpg" alt="Project 3" />
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-container">
+        <!-- About Image -->
+        <div class="about-image">
+          <img src="images.png" alt="About Us Image" />
+        </div>
+
+        <!-- About Text -->
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            We are a leading engineering consultancy, providing sustainable
+            solutions for complex infrastructure projects across the globe. With
+            a commitment to excellence, we bring innovation, expertise, and
+            dedicated service to every project.
+          </p>
+
+          <!-- Highlights -->
+          <div class="about-highlights">
+            <div class="highlight">
+              <div class="highlight-icon">🌍</div>
+              <div class="highlight-text">
+                <h3>Global Reach</h3>
+                <p>Successfully completed projects in over 50 countries.</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon">🛠️</div>
+              <div class="highlight-text">
+                <h3>Expert Team</h3>
+                <p>Our team consists of top industry experts and innovators.</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon">🏆</div>
+              <div class="highlight-text">
+                <h3>Award-Winning Services</h3>
+                <p>
+                  Recognized globally for our commitment to quality and
+                  innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p>© 2024 RITES Limited. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
